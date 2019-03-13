@@ -5,6 +5,7 @@ from scapy.layers.tls.all import *
 from collections import defaultdict
 
 CAPTURE_FILE_PATH = "/home/joey/Desktop/extracting-metadata/capture_tls.pcap"
+# CAPTURE_FILTER = ""
 CAPTURE_FILTER = "host 2.18.169.16"
 load_layer("tls")
 
@@ -57,9 +58,37 @@ def get_client_hellos():
             serverName = p.getlayer(TLS_Ext_ServerName).servernames
             # print(serverName)
 
-# Create a DNS dictionary mapping all IP adresses to domains
-# example: dict['172.217.19.196'] = 'www.google.com' 
+def reverse_dict_key(key):
+    """ Reverse a given key 'TCP 172.217.17.102:443 > 10.7.2.60:38386'
+        into 'TCP 10.7.2.60:38386 > 172.217.17.102:443'
+    """
+    result = key.split(' ')
+    src = result[1]
+    dst = result[3]
+    result[1] = dst
+    result[3] = src
+    return " ".join(result)
+
+def group_packets():
+    """ Returns a list of PacketLists
+        All connections from X to Y and from Y to X are grouped in each PacketList
+    """
+    packets = get_all_packets()
+    sessions = packets.sessions() # groups connections from X to Y as a Scapy PacketList in a dict
+    # example: dict['TCP 172.217.17.102:443 > 10.7.2.60:38386'] = PacketList
+
+    session_keys = list(sessions.keys()) # force copy so we can alter the dictionary at runtime
+    for key in session_keys:
+        reversed_key = reverse_dict_key(key)
+        if(reversed_key != key and sessions.__contains__(reversed_key)):
+            sessions[key] += sessions.pop(reversed_key)
+            session_keys.remove(reversed_key)
+    return list(sessions.values())
+
 def create_dns_dictionary():
+    """ Create a DNS dictionary mapping all IP adresses to domains
+        example: dict['172.217.19.196'] = 'www.google.com'
+    """
     responses = get_dns_responses()
     dns_dict = dict()
     for response in responses:
@@ -71,8 +100,10 @@ def create_dns_dictionary():
 
 
 dns_dict = create_dns_dictionary()
-print(dns_dict.items())
-
+grouped_packets = group_packets()
+for group in grouped_packets:
+    for packet in group:
+        print(packet.summary())
 
 # print(get_packet_size(tls_packets[13], TLS))
 # print(get_packet_size(tls_packets[13], TCP))
