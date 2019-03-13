@@ -34,20 +34,6 @@ def get_packet_size(packet, protocol):
         layer = packet.getlayer(TCP)
         return str(len(layer))
 
-# Match DNS requests with their responses
-def match_dns_responses(packets):
-    matches = defaultdict(list)
-    for p in packets:
-        p = p.getlayer(DNS)
-        if p.id in matches:
-            matches[p.id].append(p)
-        else:
-            temp_list = list()      
-            temp_list.append(p)     
-            matches[p.id] = temp_list       
-    print(list(matches.items())[6][1][0].show())
-    print(list(matches.items())[6][1][1].show())
-
 def get_client_hellos():
     myfilter = 'tcp'
     packets = sniff(lfilter=lambda x: TLS in x, filter=myfilter, offline=CAPTURE_FILE_PATH)
@@ -151,3 +137,5 @@ for group in grouped_packets:
 # timing begin stopt, sizes,  
 
 # tcp connecties samenvoegen adhv session ids?
+
+#TODO: handshake herkennen waar deze start en eindigt?
