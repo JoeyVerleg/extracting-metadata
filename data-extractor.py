@@ -5,8 +5,8 @@ from scapy.layers.tls.all import *
 from collections import defaultdict
 
 CAPTURE_FILE_PATH = "/home/joey/Desktop/extracting-metadata/capture_tls.pcap"
-# CAPTURE_FILTER = ""
-CAPTURE_FILTER = "host 2.18.169.16"
+CAPTURE_FILTER = ""
+#CAPTURE_FILTER = "host 2.18.169.16"
 load_layer("tls")
 
 def get_dns_responses():
@@ -32,7 +32,7 @@ def get_packet_size(packet, protocol):
         return layer.len
     elif protocol == TCP:
         layer = packet.getlayer(TCP)
-        return len(layer)
+        return str(len(layer))
 
 # Match DNS requests with their responses
 def match_dns_responses(packets):
@@ -83,7 +83,14 @@ def group_packets():
         if(reversed_key != key and sessions.__contains__(reversed_key)):
             sessions[key] += sessions.pop(reversed_key)
             session_keys.remove(reversed_key)
-    return list(sessions.values())
+
+    return sort_grouped_packets(list(sessions.values()))
+
+def sort_grouped_packets(grouped_packets):
+    """ Sorts all packets based on time send from first to last """
+    for group in grouped_packets:
+        group.sort(key=lambda x: x.time, reverse=False)
+    return grouped_packets
 
 def create_dns_dictionary():
     """ Create a DNS dictionary mapping all IP adresses to domains
@@ -95,15 +102,39 @@ def create_dns_dictionary():
         for x in range(response[DNS].ancount): # answer count, how many IP adresses are returned for the query
             domain = getattr(response[DNSRR][x], 'rrname').decode("utf-8") # domain (this is returned in bytes so decode)
             ip = getattr(response[DNSRR][x], 'rdata') # IP adres of the domain
-            dns_dict[ip] = domain
+            dns_dict[ip] = domain[:-1] #remove last char '.' 
     return dns_dict
 
+def create_client_hello_dictionary():
+    return
+    
+def print_packet(packet):
+    if packet.haslayer(TCP):
+        src = packet.getlayer(IP).src
+        src_port = str(packet.getlayer(TCP).sport)
+
+        dst = packet.getlayer(IP).dst
+        dst_port = str(packet.getlayer(TCP).dport)
+
+        if dns_dict.__contains__(src):
+            src = dns_dict.get(src)
+        if dns_dict.__contains__(dst):
+            dst = dns_dict.get(dst)
+
+        print("TCP / " 
+                + src + ":" + src_port
+                + " > " 
+                + dst + ":" + dst_port
+                + " / Size " + get_packet_size(packet, TCP)
+                + " / " + str(packet.time))
+    return
 
 dns_dict = create_dns_dictionary()
+client_hello = create_client_hello_dictionary()
 grouped_packets = group_packets()
 for group in grouped_packets:
     for packet in group:
-        print(packet.summary())
+        print_packet(packet)
 
 # print(get_packet_size(tls_packets[13], TLS))
 # print(get_packet_size(tls_packets[13], TCP))
