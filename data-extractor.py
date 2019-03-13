@@ -2,6 +2,7 @@ import sys
 from scapy.all import *
 from scapy.layers.dns import DNSRR, DNS, DNSQR
 from scapy.layers.tls.all import *
+from scapy.layers.inet import *
 from collections import defaultdict
 
 CAPTURE_FILE_PATH = "/home/joey/Desktop/extracting-metadata/capture_tls.pcap"
@@ -15,6 +16,10 @@ def get_dns_responses():
 
 def get_tls_packets():
     packets = sniff(lfilter = lambda x: x.haslayer(TLS), offline=CAPTURE_FILE_PATH)
+    return packets
+    
+def get_client_hello_packets():
+    packets = sniff(lfilter = lambda x: x.haslayer(TLS_Ext_ServerName), offline=CAPTURE_FILE_PATH)
     return packets
 
 def get_tcp_packets():
@@ -34,15 +39,11 @@ def get_packet_size(packet, protocol):
         layer = packet.getlayer(TCP)
         return str(len(layer))
 
-def get_client_hellos():
-    myfilter = 'tcp'
-    packets = sniff(lfilter=lambda x: TLS in x, filter=myfilter, offline=CAPTURE_FILE_PATH)
-    for p in packets:
-        if(p.haslayer(TLS_Ext_ServerName)):
-            print(p.show())
-            return
-            serverName = p.getlayer(TLS_Ext_ServerName).servernames
-            # print(serverName)
+def get_client_hello_servername(packet):
+        if(packet.haslayer(TLS_Ext_ServerName)):
+            serverNames = getattr(packet.getlayer(TLS_Ext_ServerName), 'servernames') #TODO check when there are multiple server names in the client hello message
+            if serverNames:
+                return serverNames[0].servername.decode("utf-8")
 
 def reverse_dict_key(key):
     """ Reverse a given key 'TCP 172.217.17.102:443 > 10.7.2.60:38386'
@@ -86,13 +87,23 @@ def create_dns_dictionary():
     dns_dict = dict()
     for response in responses:
         for x in range(response[DNS].ancount): # answer count, how many IP adresses are returned for the query
-            domain = getattr(response[DNSRR][x], 'rrname').decode("utf-8") # domain (this is returned in bytes so decode)
-            ip = getattr(response[DNSRR][x], 'rdata') # IP adres of the domain
-            dns_dict[ip] = domain[:-1] #remove last char '.' 
+            try: # answer count could also include 'DNS SRV Resource Record' which does not have a 'rrname' attribute so ancount is wrong if there is such a record -> TODO get amount of DNSRR instead of using ancount
+                domain = getattr(response[DNSRR][x], 'rrname').decode("utf-8") # domain (this is returned in bytes so decode)
+                ip = getattr(response[DNSRR][x], 'rdata')[0] # IP adres of the domain, TODO make this work for multiple ip adresses for one domain
+                dns_dict[ip] = domain[:-1] #remove last char '.' 
+            except:
+                continue
     return dns_dict
 
 def create_client_hello_dictionary():
-    return
+    packets = get_client_hello_packets()
+    client_hello_dict = dict()
+    for packet in packets:
+        servername = get_client_hello_servername(packet)
+        if servername:
+            ip = packet.getlayer(IP).dst
+            client_hello_dict[ip] = servername
+    return client_hello_dict
     
 def print_packet(packet):
     if packet.haslayer(TCP):
@@ -102,10 +113,10 @@ def print_packet(packet):
         dst = packet.getlayer(IP).dst
         dst_port = str(packet.getlayer(TCP).dport)
 
-        if dns_dict.__contains__(src):
-            src = dns_dict.get(src)
+        if domain_ip_dict.__contains__(src):
+            src = domain_ip_dict.get(src)
         if dns_dict.__contains__(dst):
-            dst = dns_dict.get(dst)
+            dst = domain_ip_dict.get(dst)
 
         print("TCP / " 
                 + src + ":" + src_port
@@ -116,14 +127,19 @@ def print_packet(packet):
     return
 
 dns_dict = create_dns_dictionary()
-client_hello = create_client_hello_dictionary()
+client_hello_dict = create_client_hello_dictionary()
+domain_ip_dict = {**dns_dict, **client_hello_dict} #merge dictionaries
+
+max_prints = 150
+i = 0
 grouped_packets = group_packets()
 for group in grouped_packets:
     for packet in group:
         print_packet(packet)
+        i += 1
+        if i > max_prints:
+            exit()
 
-# print(get_packet_size(tls_packets[13], TLS))
-# print(get_packet_size(tls_packets[13], TCP))
 #wireshark client hello filter:
 #ssl.handshake.extensions_server_name
 
