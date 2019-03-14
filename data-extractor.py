@@ -33,11 +33,14 @@ def get_all_packets():
 def get_packet_size(packet, protocol):
     # TODO: sometimes there are multiple TLS records into 'one' TLS record
     if protocol == TLS:
-        layer = packet.getlayer(TLS)
-        return layer.len
+        size = packet.getlayer(TLS).len
+        while packet.getlayer(TLS).payload:
+            packet = packet.getlayer(TLS).payload
+            size += packet.len
+        return size
     elif protocol == TCP:
         layer = packet.getlayer(TCP)
-        return str(len(layer))
+        return len(layer)
 
 def get_client_hello_servername(packet):
         if(packet.haslayer(TLS_Ext_ServerName)):
@@ -56,11 +59,10 @@ def reverse_dict_key(key):
     result[3] = src
     return " ".join(result)
 
-def group_packets():
+def group_packets(packets):
     """ Returns a list of PacketLists
         All connections from X to Y and from Y to X are grouped in each PacketList
     """
-    packets = get_all_packets()
     sessions = packets.sessions() # groups connections from X to Y as a Scapy PacketList in a dict
     # example: dict['TCP 172.217.17.102:443 > 10.7.2.60:38386'] = PacketList
 
@@ -89,7 +91,7 @@ def create_dns_dictionary():
         for x in range(response[DNS].ancount): # answer count, how many IP adresses are returned for the query
             try: # answer count could also include 'DNS SRV Resource Record' which does not have a 'rrname' attribute so ancount is wrong if there is such a record -> TODO get amount of DNSRR instead of using ancount
                 domain = getattr(response[DNSRR][x], 'rrname').decode("utf-8") # domain (this is returned in bytes so decode)
-                ip = getattr(response[DNSRR][x], 'rdata')[0] # IP adres of the domain, TODO make this work for multiple ip adresses for one domain
+                ip = getattr(response[DNSRR][x], 'rdata') # IP adres of the domain, TODO make this work for multiple ip adresses for one domain (Test with [0] at end)
                 dns_dict[ip] = domain[:-1] #remove last char '.' 
             except:
                 continue
@@ -105,8 +107,11 @@ def create_client_hello_dictionary():
             client_hello_dict[ip] = servername
     return client_hello_dict
     
-def print_packet(packet):
+def print_packet(packet, relative_time):
+    protocol = ""
+    size = 0
     if packet.haslayer(TCP):
+        protocol += "TCP / "
         src = packet.getlayer(IP).src
         src_port = str(packet.getlayer(TCP).sport)
 
@@ -117,41 +122,43 @@ def print_packet(packet):
             src = domain_ip_dict.get(src)
         if dns_dict.__contains__(dst):
             dst = domain_ip_dict.get(dst)
+        size = get_packet_size(packet, TCP)
+    else:
+        return
+    if packet.haslayer(TLS):
+        protocol += "TLS / "
+        size = get_packet_size(packet, TLS)
+    
+    print(protocol
+            + src + ":" + src_port
+            + " > " 
+            + dst + ":" + dst_port
+            + " / Size " + str(size)
+            + " / " + str(packet.time - relative_time))
 
-        print("TCP / " 
-                + src + ":" + src_port
-                + " > " 
-                + dst + ":" + dst_port
-                + " / Size " + get_packet_size(packet, TCP)
-                + " / " + str(packet.time))
-    return
+def print_group_packets(group):
+    relative_time = group[0].time
+    for packet in group:
+        print_packet(packet, relative_time)
 
 dns_dict = create_dns_dictionary()
 client_hello_dict = create_client_hello_dictionary()
 domain_ip_dict = {**dns_dict, **client_hello_dict} #merge dictionaries
 
-max_prints = 150
+packets = get_tls_packets()
+max_prints = 500
 i = 0
-grouped_packets = group_packets()
+grouped_packets = group_packets(packets)
 for group in grouped_packets:
-    for packet in group:
-        print_packet(packet)
-        i += 1
-        if i > max_prints:
-            exit()
+    print_group_packets(group)
+    print()
 
-#wireshark client hello filter:
-#ssl.handshake.extensions_server_name
-
-#python3 -m pip install scapy
-# verbinding dns request linken aan connecties: timing tls record, begin tcp connect en ook size tcp record
-# start/begin 
-# visualisatie achteraf
-# literatuurstudie goed bijhouden, ook geencrypteerde vormen aanhalen (is hier nog metadata uit te halen?), http3 iets uit zeggen (is al voorbeeld geven)
-# tls->sni waarom, dns niet te basic uitleggen
-# linken leggen tussen huidige implementaties en nieuwere (HTTP3)
-# timing begin stopt, sizes,  
-
-# tcp connecties samenvoegen adhv session ids?
-
-#TODO: handshake herkennen waar deze start en eindigt?
+# TODO: TCP handshake herkennen waar deze start en eindigt?
+# 14/03:
+# fingerprinting: libraries in python voor bepaalde attacks te doen om fingerprint pagina te maken
+# VNG++
+# Iuptis: A PRACTICAL CACHE RESISTANT FINGERPRINTING -> Pprintrest (mag ik code van krijgen als ik wil)
+# verschillende aanvallen uitleggen, hoe deze werken enzo
+# HTTP1  gaat accuracy veel hoger zijn van de aanvallen ipv HTTP2 (protocol is heel anders)
+# critical evaluation of website
+# check if Server Key Exchange and Server Hello Done is recognized by Scapy
