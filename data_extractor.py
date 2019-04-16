@@ -43,14 +43,14 @@ class DataExtractor:
         # TODO: sometimes there are multiple TLS records into 'one' TLS record
         if protocol == TLS:
             size = packet.getlayer(TLS).len
-            while packet.getlayer(TLS).payload:
-                # Might contain RAW data which scapy does not understand. TODO check if this data is important
-                try:
+            # Might contain RAW data which scapy does not understand. TODO check if this data is important
+            try:
+                while packet.getlayer(TLS).payload:
                     packet = packet.getlayer(TLS).payload
                     size += packet.len
-                except AttributeError:
-                    return size
-            return size
+                return size
+            except AttributeError:
+                return size
         elif protocol == TCP:
             layer = packet.getlayer(TCP)
             return len(layer)
