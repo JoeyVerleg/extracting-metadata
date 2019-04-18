@@ -7,7 +7,7 @@ from scapy.layers.inet import *
 from collections import defaultdict
 
 class DataExtractor:
-    #CAPTURE_FILTER = "host 2.18.169.16"
+    CAPTURE_FILTER = ""
 
     def __init__(self, trace_dir, output_dir, local_ip):
         load_layer("tls")
@@ -23,7 +23,7 @@ class DataExtractor:
         return packets
 
     def get_tls_packets(self, path_tracefile):
-        packets = sniff(lfilter = lambda x: x.haslayer(TLS), offline=path_tracefile)
+        packets = sniff(lfilter = lambda x: x.haslayer(TLS), offline=path_tracefile, filter=self.CAPTURE_FILTER)
         return packets
         
     def get_client_hello_packets(self, path_tracefile):
@@ -31,7 +31,7 @@ class DataExtractor:
         return packets
 
     def get_tcp_packets(self, path_tracefile):
-        packets = sniff(lfilter = lambda x: x.haslayer(TCP), offline=path_tracefile)
+        packets = sniff(lfilter = lambda x: x.haslayer(TCP), offline=path_tracefile, filter=self.CAPTURE_FILTER)
         return packets
 
     def get_all_packets(self, path_tracefile):
@@ -62,9 +62,17 @@ class DataExtractor:
                     return serverNames[0].servername.decode("utf-8")
 
     def get_tls_packet_fingerprint_info(self, packet, relative_time):
-        """ Returns size timing direction of packet """
+        """ Returns size timing direction of TLS packet """
 
         size = self.get_packet_size(packet, TLS)
+        time = packet.time - relative_time
+        direction = self.get_packet_direction(packet)
+        return str(time) + '\t' + str(direction*size)
+
+    def get_tcp_packet_fingerprint_info(self, packet, relative_time):
+        """ Returns size timing direction of TCP packet """
+
+        size = self.get_packet_size(packet, TCP)
         time = packet.time - relative_time
         direction = self.get_packet_direction(packet)
         return str(time) + '\t' + str(direction*size)
@@ -138,6 +146,17 @@ class DataExtractor:
                 ip = packet.getlayer(IP).dst
                 client_hello_dict[ip] = servername
         return client_hello_dict
+    
+    def get_domain_ip_via_sni(self, path_tracefile, domain):
+        """ Return the ip address for the provided domain by searching in the SNI extensions in the tracefile """
+        packets = self.get_client_hello_packets(path_tracefile)
+        for packet in packets:
+            servername = self.get_client_hello_servername(packet)
+            if servername == domain:
+                ip = packet.getlayer(IP).dst
+                return ip
+        return -1
+
         
     def print_packet(self, packet, relative_time):
         """ Used for debugging """
@@ -180,7 +199,8 @@ class DataExtractor:
         relative_time = packets[0].time
         with open(file_path, 'a') as out:
             for packet in packets:
-                data = self.get_tls_packet_fingerprint_info(packet, relative_time)
+                data = self.get_tcp_packet_fingerprint_info(packet, relative_time)
+                # data = self.get_tls_packet_fingerprint_info(packet, relative_time)
                 out.write(data + '\n')
 
     def start_extracting(self):
@@ -188,12 +208,17 @@ class DataExtractor:
             # dns_dict = create_dns_dictionary()
             # client_hello_dict = create_client_hello_dictionary()
             # domain_ip_dict = {**dns_dict, **client_hello_dict} #merge dictionaries
-        # if GROUPED
+        # if GROUPED    
             # save as grouped
         directory = os.fsencode(self.TRACE_DIR)
         for file in os.listdir(directory):
             trace_file_path = os.path.join(self.TRACE_DIR, os.fsdecode(file))
             fingerprint_file_path = os.path.join(self.OUTPUT_DIR, os.fsdecode(file).split('.pcap')[0])
-            print(fingerprint_file_path)
-            packets = self.get_tls_packets(trace_file_path)
+            print(trace_file_path)
+            ip_imdb = self.get_domain_ip_via_sni(trace_file_path, "www.imdb.com")
+            # self.CAPTURE_FILTER = "host " + ip_imdb
+            if ip_imdb != "52.85.245.38":
+                continue
+            self.CAPTURE_FILTER = "host 52.85.245.38"
+            packets = self.get_tcp_packets(trace_file_path)
             self.save_as_fingerprint(packets, fingerprint_file_path)

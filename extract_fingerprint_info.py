@@ -14,3 +14,6 @@ LOCAL_IP = args.local_ip
 
 extractor = DataExtractor(TRACE_DIR_PATH, OUTPUT_FILE_PATH, LOCAL_IP)
 extractor.start_extracting()
+
+#IMDB IP: 52.85.245.38 or 54.192.15.64
+# python3.7 extract_fingerprint_info.py traces_13_04/ output_domain_imdb/ "192.168.191.128"
