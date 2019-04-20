@@ -199,10 +199,14 @@ class DataExtractor:
         relative_time = packets[0].time
         with open(file_path, 'a') as out:
             for packet in packets:
-                data = self.get_tcp_packet_fingerprint_info(packet, relative_time)
-                # data = self.get_tls_packet_fingerprint_info(packet, relative_time)
+                # data = self.get_tcp_packet_fingerprint_info(packet, relative_time)
+                data = self.get_tls_packet_fingerprint_info(packet, relative_time)
                 out.write(data + '\n')
 
+
+    def set_filter(self, filter):
+        self.CAPTURE_FILTER = filter
+        
     def start_extracting(self):
         # if MAP_DOMAINS:
             # dns_dict = create_dns_dictionary()
@@ -215,10 +219,11 @@ class DataExtractor:
             trace_file_path = os.path.join(self.TRACE_DIR, os.fsdecode(file))
             fingerprint_file_path = os.path.join(self.OUTPUT_DIR, os.fsdecode(file).split('.pcap')[0])
             print(trace_file_path)
-            ip_imdb = self.get_domain_ip_via_sni(trace_file_path, "www.imdb.com")
-            # self.CAPTURE_FILTER = "host " + ip_imdb
-            if ip_imdb != "52.85.245.38":
-                continue
-            self.CAPTURE_FILTER = "host 52.85.245.38"
-            packets = self.get_tcp_packets(trace_file_path)
+            # ip_imdb = self.get_domain_ip_via_sni(trace_file_path, "www.imdb.com")
+            # # self.CAPTURE_FILTER = "host " + ip_imdb
+            # if ip_imdb != "52.85.245.38":
+            #     continue
+            # self.CAPTURE_FILTER = "host 52.85.245.38"
+            # packets = self.get_tcp_packets(trace_file_path)
+            packets = self.get_tls_packets(trace_file_path)
             self.save_as_fingerprint(packets, fingerprint_file_path)
