@@ -51,7 +51,7 @@ for url in urls:
 
             
             time.sleep(SETUP_DELAY + 1)
-            p_process = subprocess.Popen(['tcpdump', '-U', '-w ' + OUTPUT_DIR + str(id) + '-' + str(page_load) + '.pcap'])
+            p_process = subprocess.Popen(['tcpdump', '-U', '-w' + OUTPUT_DIR + str(id) + '-' + str(page_load) + '.pcap'])
             time.sleep(SETUP_DELAY)
             driver.get(url)
             time.sleep(LOAD_DELAY)
