@@ -1,0 +1,402 @@
+{
+	{ 
+		"title":"Life Is Beautiful (1997) - IMDb",
+		"url":"https://www.imdb.com/title/tt0118799/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_25" 
+	},
+	{ 
+		"title":"It's a Wonderful Life (1946) - IMDb",
+		"url":"https://www.imdb.com/title/tt0038650/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_24" 
+	},
+	{ 
+		"title":"The Silence of the Lambs (1991) - IMDb",
+		"url":"https://www.imdb.com/title/tt0102926/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_23" 
+	},
+	{ 
+		"title":"Star Wars: Episode IV - A New Hope (1977) - IMDb",
+		"url":"https://www.imdb.com/title/tt0076759/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_22" 
+	},
+	{ 
+		"title":"City of God (2002) - IMDb",
+		"url":"https://www.imdb.com/title/tt0317248/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_21" 
+	},
+	{ 
+		"title":"Se7en (1995) - IMDb",
+		"url":"https://www.imdb.com/title/tt0114369/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_20" 
+	},
+	{ 
+		"title":"Seven Samurai (1954) - IMDb",
+		"url":"https://www.imdb.com/title/tt0047478/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_19" 
+	},
+	{ 
+		"title":"The Matrix (1999) - IMDb",
+		"url":"https://www.imdb.com/title/tt0133093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_18" 
+	},
+	{ 
+		"title":"Goodfellas (1990) - IMDb",
+		"url":"https://www.imdb.com/title/tt0099685/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_17" 
+	},
+	{ 
+		"title":"One Flew Over the Cuckoo's Nest (1975) - IMDb",
+		"url":"https://www.imdb.com/title/tt0073486/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_16" 
+	},
+	{ 
+		"title":"The Lord of the Rings: The Two Towers (2002) - IMDb",
+		"url":"https://www.imdb.com/title/tt0167261/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_15" 
+	},
+	{ 
+		"title":"Inception (2010) - IMDb",
+		"url":"https://www.imdb.com/title/tt1375666/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_14" 
+	},
+	{ 
+		"title":"Star Wars: Episode V - The Empire Strikes Back (1980) - IMDb",
+		"url":"https://www.imdb.com/title/tt0080684/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_13" 
+	},
+	{ 
+		"title":"Forrest Gump (1994) - IMDb",
+		"url":"https://www.imdb.com/title/tt0109830/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_12" 
+	},
+	{ 
+		"title":"The Lord of the Rings: The Fellowship of the Ring (2001) - IMDb",
+		"url":"https://www.imdb.com/title/tt0120737/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_11" 
+	},
+	{ 
+		"title":"Fight Club (1999) - IMDb",
+		"url":"https://www.imdb.com/title/tt0137523/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_10" 
+	},
+	{ 
+		"title":"The Good, the Bad and the Ugly (1966) - IMDb",
+		"url":"https://www.imdb.com/title/tt0060196/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_9" 
+	},
+	{ 
+		"title":"Pulp Fiction (1994) - IMDb",
+		"url":"https://www.imdb.com/title/tt0110912/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_8" 
+	},
+	{ 
+		"title":"The Lord of the Rings: The Return of the King (2003) - IMDb",
+		"url":"https://www.imdb.com/title/tt0167260/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_7" 
+	},
+	{ 
+		"title":"Schindler's List (1993) - IMDb",
+		"url":"https://www.imdb.com/title/tt0108052/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_6" 
+	},
+	{ 
+		"title":"12 Angry Men (1957) - IMDb",
+		"url":"https://www.imdb.com/title/tt0050083/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_5" 
+	},
+	{ 
+		"title":"The Dark Knight (2008) - IMDb",
+		"url":"https://www.imdb.com/title/tt0468569/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_4" 
+	},
+	{ 
+		"title":"The Godfather: Part II (1974) - IMDb",
+		"url":"https://www.imdb.com/title/tt0071562/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_3" 
+	},
+	{ 
+		"title":"The Godfather (1972) - IMDb",
+		"url":"https://www.imdb.com/title/tt0068646/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_2" 
+	},
+	{ 
+		"title":"The Shawshank Redemption (1994) - IMDb",
+		"url":"https://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1" 
+	},
+	{ 
+		"title":"Spirited Away (2001) - IMDb",
+		"url":"https://www.imdb.com/title/tt0245429/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_26" 
+	},
+	{ 
+		"title":"Saving Private Ryan (1998) - IMDb",
+		"url":"https://www.imdb.com/title/tt0120815/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_27" 
+	},
+	{ 
+		"title":"The Usual Suspects (1995) - IMDb",
+		"url":"https://www.imdb.com/title/tt0114814/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_28" 
+	},
+	{ 
+		"title":"Léon: The Professional (1994) - IMDb",
+		"url":"https://www.imdb.com/title/tt0110413/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_29" 
+	},
+	{ 
+		"title":"The Green Mile (1999) - IMDb",
+		"url":"https://www.imdb.com/title/tt0120689/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_30" 
+	},
+	{ 
+		"title":"Interstellar (2014) - IMDb",
+		"url":"https://www.imdb.com/title/tt0816692/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_31" 
+	},
+	{ 
+		"title":"Psycho (1960) - IMDb",
+		"url":"https://www.imdb.com/title/tt0054215/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_32" 
+	},
+	{ 
+		"title":"American History X (1998) - IMDb",
+		"url":"https://www.imdb.com/title/tt0120586/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_33" 
+	},
+	{ 
+		"title":"City Lights (1931) - IMDb",
+		"url":"https://www.imdb.com/title/tt0021749/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_34" 
+	},
+	{ 
+		"title":"Casablanca (1942) - IMDb",
+		"url":"https://www.imdb.com/title/tt0034583/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_35" 
+	},
+	{ 
+		"title":"Once Upon a Time in the West (1968) - IMDb",
+		"url":"https://www.imdb.com/title/tt0064116/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_36" 
+	},
+	{ 
+		"title":"The Pianist (2002) - IMDb",
+		"url":"https://www.imdb.com/title/tt0253474/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_37" 
+	},
+	{ 
+		"title":"Modern Times (1936) - IMDb",
+		"url":"https://www.imdb.com/title/tt0027977/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_38" 
+	},
+	{ 
+		"title":"The Intouchables (2011) - IMDb",
+		"url":"https://www.imdb.com/title/tt1675434/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_39" 
+	},
+	{ 
+		"title":"The Departed (2006) - IMDb",
+		"url":"https://www.imdb.com/title/tt0407887/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_40" 
+	},
+	{ 
+		"title":"Back to the Future (1985) - IMDb",
+		"url":"https://www.imdb.com/title/tt0088763/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_41" 
+	},
+	{ 
+		"title":"Terminator 2: Judgment Day (1991) - IMDb",
+		"url":"https://www.imdb.com/title/tt0103064/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_42" 
+	},
+	{ 
+		"title":"Whiplash (2014) - IMDb",
+		"url":"https://www.imdb.com/title/tt2582802/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_43" 
+	},
+	{ 
+		"title":"The Lion King (1994) - IMDb",
+		"url":"https://www.imdb.com/title/tt0110357/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_44" 
+	},
+	{ 
+		"title":"Rear Window (1954) - IMDb",
+		"url":"https://www.imdb.com/title/tt0047396/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_45" 
+	},
+	{ 
+		"title":"Indiana Jones and the Raiders of the Lost Ark (1981) - IMDb",
+		"url":"https://www.imdb.com/title/tt0082971/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_46" 
+	},
+	{ 
+		"title":"Gladiator (2000) - IMDb",
+		"url":"https://www.imdb.com/title/tt0172495/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_47" 
+	},
+	{ 
+		"title":"The Prestige (2006) - IMDb",
+		"url":"https://www.imdb.com/title/tt0482571/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_48" 
+	},
+	{ 
+		"title":"Apocalypse Now (1979) - IMDb",
+		"url":"https://www.imdb.com/title/tt0078788/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_49" 
+	},
+	{ 
+		"title":"Spider-Man: Into the Spider-Verse (2018) - IMDb",
+		"url":"https://www.imdb.com/title/tt4633694/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_50" 
+	},
+	{ 
+		"title":"Memento (2000) - IMDb",
+		"url":"https://www.imdb.com/title/tt0209144/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_51" 
+	},
+	{ 
+		"title":"Alien (1979) - IMDb",
+		"url":"https://www.imdb.com/title/tt0078748/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_52" 
+	},
+	{ 
+		"title":"Grave of the Fireflies (1988) - IMDb",
+		"url":"https://www.imdb.com/title/tt0095327/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_53" 
+	},
+	{ 
+		"title":"Cinema Paradiso (1988) - IMDb",
+		"url":"https://www.imdb.com/title/tt0095765/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_54" 
+	},
+	{ 
+		"title":"The Great Dictator (1940) - IMDb",
+		"url":"https://www.imdb.com/title/tt0032553/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_55" 
+	},
+	{ 
+		"title":"Sunset Boulevard (1950) - IMDb",
+		"url":"https://www.imdb.com/title/tt0043014/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_56" 
+	},
+	{ 
+		"title":"The Lives of Others (2006) - IMDb",
+		"url":"https://www.imdb.com/title/tt0405094/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_57" 
+	},
+	{ 
+		"title":"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964) - IMDb",
+		"url":"https://www.imdb.com/title/tt0057012/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_58" 
+	},
+	{ 
+		"title":"Paths of Glory (1957) - IMDb",
+		"url":"https://www.imdb.com/title/tt0050825/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_59" 
+	},
+	{ 
+		"title":"Avengers: Infinity War (2018) - IMDb",
+		"url":"https://www.imdb.com/title/tt4154756/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_60" 
+	},
+	{ 
+		"title":"Django Unchained (2012) - IMDb",
+		"url":"https://www.imdb.com/title/tt1853728/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_61" 
+	},
+	{ 
+		"title":"The Shining (1980) - IMDb",
+		"url":"https://www.imdb.com/title/tt0081505/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_62" 
+	},
+	{ 
+		"title":"WALL·E (2008) - IMDb",
+		"url":"https://www.imdb.com/title/tt0910970/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_63" 
+	},
+	{ 
+		"title":"Princess Mononoke (1997) - IMDb",
+		"url":"https://www.imdb.com/title/tt0119698/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_64" 
+	},
+	{ 
+		"title":"Witness for the Prosecution (1957) - IMDb",
+		"url":"https://www.imdb.com/title/tt0051201/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_65" 
+	},
+	{ 
+		"title":"Oldboy (2003) - IMDb",
+		"url":"https://www.imdb.com/title/tt0364569/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_66" 
+	},
+	{ 
+		"title":"Aliens (1986) - IMDb",
+		"url":"https://www.imdb.com/title/tt0090605/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_67" 
+	},
+	{ 
+		"title":"The Dark Knight Rises (2012) - IMDb",
+		"url":"https://www.imdb.com/title/tt1345836/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_68" 
+	},
+	{ 
+		"title":"American Beauty (1999) - IMDb",
+		"url":"https://www.imdb.com/title/tt0169547/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_69" 
+	},
+	{ 
+		"title":"Once Upon a Time in America (1984) - IMDb",
+		"url":"https://www.imdb.com/title/tt0087843/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_70" 
+	},
+	{ 
+		"title":"Coco (2017) - IMDb",
+		"url":"https://www.imdb.com/title/tt2380307/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_71" 
+	},
+	{ 
+		"title":"Das Boot (1981) - IMDb",
+		"url":"https://www.imdb.com/title/tt0082096/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_72" 
+	},
+	{ 
+		"title":"Citizen Kane (1941) - IMDb",
+		"url":"https://www.imdb.com/title/tt0033467/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_73" 
+	},
+	{ 
+		"title":"Braveheart (1995) - IMDb",
+		"url":"https://www.imdb.com/title/tt0112573/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_74" 
+	},
+	{ 
+		"title":"Vertigo (1958) - IMDb",
+		"url":"https://www.imdb.com/title/tt0052357/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_75" 
+	},
+	{ 
+		"title":"North by Northwest (1959) - IMDb",
+		"url":"https://www.imdb.com/title/tt0053125/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_76" 
+	},
+	{ 
+		"title":"Reservoir Dogs (1992) - IMDb",
+		"url":"https://www.imdb.com/title/tt0105236/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_77" 
+	},
+	{ 
+		"title":"Your Name. (2016) - IMDb",
+		"url":"https://www.imdb.com/title/tt5311514/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_78" 
+	},
+	{ 
+		"title":"Star Wars: Episode VI - Return of the Jedi (1983) - IMDb",
+		"url":"https://www.imdb.com/title/tt0086190/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_79" 
+	},
+	{ 
+		"title":"M (1931) - IMDb",
+		"url":"https://www.imdb.com/title/tt0022100/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_80" 
+	},
+	{ 
+		"title":"Amadeus (1984) - IMDb",
+		"url":"https://www.imdb.com/title/tt0086879/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_81" 
+	},
+	{ 
+		"title":"Requiem for a Dream (2000) - IMDb",
+		"url":"https://www.imdb.com/title/tt0180093/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_82" 
+	},
+	{ 
+		"title":"Dangal (2016) - IMDb",
+		"url":"https://www.imdb.com/title/tt5074352/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_83" 
+	},
+	{ 
+		"title":"3 Idiots (2009) - IMDb",
+		"url":"https://www.imdb.com/title/tt1187043/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_84" 
+	},
+	{ 
+		"title":"Like Stars on Earth (2007) - IMDb",
+		"url":"https://www.imdb.com/title/tt0986264/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_85" 
+	},
+	{ 
+		"title":"2001: A Space Odyssey (1968) - IMDb",
+		"url":"https://www.imdb.com/title/tt0062622/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_86" 
+	},
+	{ 
+		"title":"Toy Story (1995) - IMDb",
+		"url":"https://www.imdb.com/title/tt0114709/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_87" 
+	},
+	{ 
+		"title":"Eternal Sunshine of the Spotless Mind (2004) - IMDb",
+		"url":"https://www.imdb.com/title/tt0338013/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_88" 
+	},
+	{ 
+		"title":"Lawrence of Arabia (1962) - IMDb",
+		"url":"https://www.imdb.com/title/tt0056172/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_89" 
+	},
+	{ 
+		"title":"A Clockwork Orange (1971) - IMDb",
+		"url":"https://www.imdb.com/title/tt0066921/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_90" 
+	},
+	{ 
+		"title":"Singin' in the Rain (1952) - IMDb",
+		"url":"https://www.imdb.com/title/tt0045152/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_91" 
+	},
+	{ 
+		"title":"Amélie (2001) - IMDb",
+		"url":"https://www.imdb.com/title/tt0211915/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_92" 
+	},
+	{ 
+		"title":"Double Indemnity (1944) - IMDb",
+		"url":"https://www.imdb.com/title/tt0036775/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_93" 
+	},
+	{ 
+		"title":"Taxi Driver (1976) - IMDb",
+		"url":"https://www.imdb.com/title/tt0075314/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_94" 
+	},
+	{ 
+		"title":"Inglourious Basterds (2009) - IMDb",
+		"url":"https://www.imdb.com/title/tt0361748/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_95" 
+	},
+	{ 
+		"title":"Full Metal Jacket (1987) - IMDb",
+		"url":"https://www.imdb.com/title/tt0093058/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_96" 
+	},
+	{ 
+		"title":"To Kill a Mockingbird (1962) - IMDb",
+		"url":"https://www.imdb.com/title/tt0056592/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_97" 
+	},
+	{ 
+		"title":"Bicycle Thieves (1948) - IMDb",
+		"url":"https://www.imdb.com/title/tt0040522/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_98" 
+	},
+	{ 
+		"title":"The Kid (1921) - IMDb",
+		"url":"https://www.imdb.com/title/tt0012349/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_99" 
+	},
+	{ 
+		"title":"Good Will Hunting (1997) - IMDb",
+		"url":"https://www.imdb.com/title/tt0119217/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=DB9KBJWVHXJ52V7316XV&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_100" 
+	}
+}
