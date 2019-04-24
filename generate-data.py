@@ -9,12 +9,11 @@ from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 # Chrome
 chrome_options = ChromeOptions()
-# chrome_options.add_argument("--no-sandbox")
-# chrome_options.add_argument("--headless")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--headless")
 # chrome_options.add_argument("--whitelisted-ips")
 # chrome_options.add_argument("--no-sandbox")
 # chrome_options.add_argument("--disable-extensions")    
-# driver = webdriver.Chrome(executable_path=r'/home/joey/Desktop/fingerprinting/extracting-metadata/chromedriver', options=chrome_options)
 
 
 # firefox_options = FirefoxOptions()
@@ -137,8 +136,8 @@ max_page_loads = 200
 for url in urls:
     for page_load in range(0, max_page_loads):
         try:
-            driver = webdriver.Chrome(options=chrome_options)
             # driver = webdriver.Firefox(options=firefox_options)
+            driver = webdriver.Chrome(executable_path=r'/home/ec2-user/datadrive/extracting-metadata/chromedriver', options=chrome_options)
             driver.get('http://google.be')
 
             

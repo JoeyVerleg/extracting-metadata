@@ -1,0 +1,417 @@
+/usr/local/lib/python3.6/site-packages/scapy/layers/tls/keyexchange.py:609: CryptographyDeprecationWarning: Support for unsafe construction of public numbers from encoded data will be removed in a future version. Please use EllipticCurvePublicKey.from_encoded_point
+  pubnum = import_point(curve, self.point)
+../grouped-traces/99.84.183.247/ 7-90.pcap
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/shutil.py", line 550, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: '../traces/ 7-90.pcap' -> '../grouped-traces/99.84.183.247/ 7-90.pcap'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "group-traces.py", line 27, in <module>
+    shutil.move(trace_file_path, output_trace_file_path)
+  File "/usr/lib64/python3.6/shutil.py", line 564, in move
+    copy_function(src, real_dst)
+  File "/usr/lib64/python3.6/shutil.py", line 263, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/usr/lib64/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '../traces/ 7-90.pcap'
+/usr/local/lib/python3.6/site-packages/scapy/layers/tls/keyexchange.py:609: CryptographyDeprecationWarning: Support for unsafe construction of public numbers from encoded data will be removed in a future version. Please use EllipticCurvePublicKey.from_encoded_point
+  pubnum = import_point(curve, self.point)
+../grouped-traces/13.249.42.122/ 8-8.pcap
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/shutil.py", line 550, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: '../traces/ 8-8.pcap' -> '../grouped-traces/13.249.42.122/ 8-8.pcap'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "group-traces.py", line 27, in <module>
+    shutil.move(trace_file_path, output_trace_file_path)
+  File "/usr/lib64/python3.6/shutil.py", line 564, in move
+    copy_function(src, real_dst)
+  File "/usr/lib64/python3.6/shutil.py", line 263, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/usr/lib64/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '../traces/ 8-8.pcap'
+/usr/local/lib/python3.6/site-packages/scapy/layers/tls/keyexchange.py:609: CryptographyDeprecationWarning: Support for unsafe construction of public numbers from encoded data will be removed in a future version. Please use EllipticCurvePublicKey.from_encoded_point
+  pubnum = import_point(curve, self.point)
+../grouped-traces/99.84.183.247/ 9-508.pcap
+../grouped-traces/99.84.183.247/ 3-310.pcap
+../grouped-traces/99.84.183.247/ 4-403.pcap
+../grouped-traces/99.84.183.247/ 7-432.pcap
+../grouped-traces/13.249.42.122/ 3-420.pcap
+../grouped-traces/13.249.42.122/ 8-688.pcap
+../grouped-traces/13.249.42.122/ 7-423.pcap
+../grouped-traces/99.84.183.247/ 9-239.pcap
+../grouped-traces/99.84.183.247/ 9-102.pcap
+../grouped-traces/13.249.42.122/ 6-150.pcap
+../grouped-traces/13.249.42.122/ 7-91.pcap
+../grouped-traces/13.249.42.122/ 3-277.pcap
+../grouped-traces/99.84.183.247/ 9-549.pcap
+../grouped-traces/99.84.183.247/ 4-428.pcap
+../grouped-traces/99.84.183.247/ 9-119.pcap
+../grouped-traces/99.84.103.251/ 4-699.pcap
+../grouped-traces/99.84.183.247/ 8-540.pcap
+../grouped-traces/99.84.183.247/ 3-355.pcap
+../grouped-traces/54.230.194.158/ 3-80.pcap
+../grouped-traces/99.84.183.247/ 7-312.pcap
+../grouped-traces/52.84.123.220/ 3-373.pcap
+../grouped-traces/52.84.123.220/ 5-326.pcap
+../grouped-traces/13.249.42.122/ 5-392.pcap
+../grouped-traces/99.84.183.247/ 5-602.pcap
+../grouped-traces/99.84.183.247/ 8-603.pcap
+../grouped-traces/99.84.220.222/ 5-74.pcap
+../grouped-traces/13.249.42.122/ 7-254.pcap
+../grouped-traces/99.84.183.247/ 6-505.pcap
+../grouped-traces/99.84.183.247/ 8-632.pcap
+../grouped-traces/99.84.183.247/ 6-253.pcap
+../grouped-traces/13.249.42.122/ 3-104.pcap
+../grouped-traces/13.249.42.122/ 9-627.pcap
+../grouped-traces/13.249.42.122/ 5-517.pcap
+../grouped-traces/99.84.183.247/ 3-220.pcap
+../grouped-traces/99.84.183.247/ 6-602.pcap
+../grouped-traces/99.84.183.247/ 6-167.pcap
+../grouped-traces/13.249.42.122/ 8-411.pcap
+../grouped-traces/99.84.220.222/ 3-244.pcap
+../grouped-traces/13.249.42.122/ 7-552.pcap
+../grouped-traces/13.249.42.122/ 5-574.pcap
+../grouped-traces/13.249.42.122/ 8-190.pcap
+../grouped-traces/52.84.123.220/ 6-53.pcap
+../grouped-traces/52.84.123.220/ 6-473.pcap
+../grouped-traces/13.249.42.122/ 4-15.pcap
+../grouped-traces/99.84.183.247/ 7-568.pcap
+../grouped-traces/13.249.42.122/ 6-220.pcap
+../grouped-traces/13.249.42.122/ 6-617.pcap
+../grouped-traces/13.249.42.122/ 3-483.pcap
+../grouped-traces/13.249.42.122/ 5-518.pcap
+../grouped-traces/99.84.103.251/ 8-467.pcap
+../grouped-traces/99.84.183.247/ 6-225.pcap
+../grouped-traces/13.249.42.122/ 5-2.pcap
+../grouped-traces/99.84.183.247/ 4-2.pcap
+../grouped-traces/99.84.183.247/ 8-398.pcap
+../grouped-traces/99.84.183.247/ 7-90.pcap
+../grouped-traces/99.84.183.247/ 7-63.pcap
+../grouped-traces/99.84.183.247/ 6-536.pcap
+../grouped-traces/13.249.42.122/ 5-610.pcap
+../grouped-traces/99.84.183.247/ 4-9.pcap
+../grouped-traces/13.249.42.122/ 7-560.pcap
+../grouped-traces/13.249.42.122/ 4-92.pcap
+../grouped-traces/99.84.183.247/ 9-120.pcap
+../grouped-traces/52.84.123.220/ 8-693.pcap
+../grouped-traces/99.84.183.247/ 7-502.pcap
+../grouped-traces/13.249.42.122/ 7-139.pcap
+../grouped-traces/13.249.42.122/ 7-486.pcap
+../grouped-traces/99.84.183.247/ 5-477.pcap
+../grouped-traces/13.249.42.122/ 8-8.pcap
+../grouped-traces/54.230.194.24/ 8-188.pcap
+../grouped-traces/13.249.42.122/ 9-623.pcap
+../grouped-traces/99.84.183.247/ 9-574.pcap
+../grouped-traces/99.84.183.247/ 5-681.pcap
+../grouped-traces/99.84.183.247/ 8-384.pcap
+../grouped-traces/99.84.183.247/ 3-549.pcap
+../grouped-traces/99.84.183.247/ 6-1.pcap
+../grouped-traces/99.84.220.222/ 5-79.pcap
+../grouped-traces/99.84.183.247/ 5-55.pcap
+../grouped-traces/99.84.183.247/ 6-519.pcap
+../grouped-traces/52.84.123.220/ 9-454.pcap
+../grouped-traces/13.249.42.122/ 9-251.pcap
+../grouped-traces/99.84.103.251/ 9-400.pcap
+../grouped-traces/99.84.220.222/ 4-88.pcap
+../grouped-traces/13.249.42.122/ 7-283.pcap
+../grouped-traces/13.249.42.122/ 6-546.pcap
+../grouped-traces/99.84.183.247/ 5-654.pcap
+../grouped-traces/99.84.220.222/ 3-342.pcap
+../grouped-traces/13.249.42.122/ 5-379.pcap
+../grouped-traces/13.249.42.122/ 6-441.pcap
+../grouped-traces/99.84.183.247/ 7-3.pcap
+../grouped-traces/13.249.42.122/ 6-387.pcap
+../grouped-traces/13.249.42.122/ 6-657.pcap
+../grouped-traces/99.84.183.247/ 7-352.pcap
+../grouped-traces/99.84.103.251/ 9-216.pcap
+../grouped-traces/13.249.42.122/ 3-24.pcap
+../grouped-traces/99.84.183.247/ 8-146.pcap
+../grouped-traces/13.249.42.122/ 8-258.pcap
+../grouped-traces/99.84.183.247/ 6-126.pcap
+../grouped-traces/13.249.42.122/ 5-480.pcap
+../grouped-traces/99.84.183.247/ 9-554.pcap
+../grouped-traces/52.84.123.220/ 7-123.pcap
+../grouped-traces/13.249.42.122/ 8-221.pcap
+../grouped-traces/99.84.183.247/ 6-661.pcap
+../grouped-traces/13.249.42.122/ 6-460.pcap
+../grouped-traces/99.84.183.247/ 5-655.pcap
+../grouped-traces/99.84.183.247/ 7-241.pcap
+../grouped-traces/99.84.220.222/ 4-532.pcap
+../grouped-traces/99.84.183.247/ 3-590.pcap
+../grouped-traces/52.84.123.220/ 6-55.pcap
+../grouped-traces/13.249.42.122/ 8-158.pcap
+../grouped-traces/54.230.194.158/ 5-110.pcap
+../grouped-traces/99.84.183.247/ 9-296.pcap
+../grouped-traces/13.249.42.122/ 7-385.pcap
+../grouped-traces/99.84.183.247/ 9-502.pcap
+../grouped-traces/13.249.42.122/ 6-141.pcap
+../grouped-traces/99.84.103.251/ 9-255.pcap
+../grouped-traces/52.84.123.220/ 9-464.pcap
+../grouped-traces/52.84.123.220/ 7-275.pcap
+../grouped-traces/99.84.220.222/ 3-455.pcap
+../grouped-traces/99.84.183.247/ 5-304.pcap
+../grouped-traces/99.84.183.247/ 9-298.pcap
+../grouped-traces/13.249.42.122/ 6-493.pcap
+../grouped-traces/99.84.183.247/ 9-617.pcap
+../grouped-traces/13.249.42.122/ 5-192.pcap
+../grouped-traces/99.84.183.247/ 4-329.pcap
+../grouped-traces/99.84.183.247/ 5-460.pcap
+../grouped-traces/13.249.42.122/ 8-241.pcap
+../grouped-traces/13.249.42.122/ 4-14.pcap
+../grouped-traces/52.84.123.220/ 9-380.pcap
+../grouped-traces/99.84.220.222/ 3-475.pcap
+../grouped-traces/13.249.42.122/ 5-566.pcap
+../grouped-traces/99.84.183.247/ 3-288.pcap
+../grouped-traces/99.84.183.247/ 8-117.pcap
+../grouped-traces/13.249.42.122/ 7-571.pcap
+../grouped-traces/13.249.42.122/ 8-16.pcap
+../grouped-traces/13.249.42.122/ 4-510.pcap
+../grouped-traces/13.249.42.122/ 9-236.pcap
+../grouped-traces/13.249.42.122/ 4-628.pcap
+../grouped-traces/99.84.183.247/ 3-141.pcap
+../grouped-traces/13.249.42.122/ 6-379.pcap
+../grouped-traces/99.84.103.251/ 8-530.pcap
+../grouped-traces/52.84.123.220/ 7-180.pcap
+../grouped-traces/13.249.42.122/ 7-176.pcap
+../grouped-traces/13.249.42.122/ 5-257.pcap
+../grouped-traces/99.84.183.247/ 7-193.pcap
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/shutil.py", line 550, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: '../traces/ 7-193.pcap' -> '../grouped-traces/99.84.183.247/ 7-193.pcap'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "group-traces.py", line 27, in <module>
+    shutil.move(trace_file_path, output_trace_file_path)
+  File "/usr/lib64/python3.6/shutil.py", line 564, in move
+    copy_function(src, real_dst)
+  File "/usr/lib64/python3.6/shutil.py", line 263, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/usr/lib64/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '../traces/ 7-193.pcap'
+../grouped-traces/13.249.42.122/ 6-210.pcap
+../grouped-traces/99.84.183.247/ 9-30.pcap
+../grouped-traces/54.230.194.158/ 3-83.pcap
+../grouped-traces/99.84.183.247/ 6-120.pcap
+../grouped-traces/99.84.183.247/ 6-690.pcap
+../grouped-traces/13.249.42.122/ 6-281.pcap
+../grouped-traces/13.249.42.122/ 3-150.pcap
+../grouped-traces/99.84.183.247/ 8-551.pcap
+../grouped-traces/99.84.183.247/ 4-641.pcap
+../grouped-traces/52.84.123.220/ 8-108.pcap
+../grouped-traces/13.249.42.122/ 3-175.pcap
+../grouped-traces/13.249.42.122/ 4-659.pcap
+../grouped-traces/99.84.183.247/ 9-185.pcap
+../grouped-traces/99.84.183.247/ 7-437.pcap
+../grouped-traces/13.249.42.122/ 4-496.pcap
+../grouped-traces/99.84.183.247/ 4-461.pcap
+../grouped-traces/99.84.183.247/ 4-595.pcap
+../grouped-traces/13.249.42.122/ 9-363.pcap
+../grouped-traces/99.84.103.251/ 9-226.pcap
+../grouped-traces/13.249.42.122/ 4-333.pcap
+../grouped-traces/13.249.42.122/ 9-66.pcap
+../grouped-traces/13.249.42.122/ 5-60.pcap
+../grouped-traces/99.84.183.247/ 5-115.pcap
+../grouped-traces/99.84.183.247/ 4-548.pcap
+../grouped-traces/13.249.42.122/ 4-294.pcap
+../grouped-traces/13.249.42.122/ 9-285.pcap
+../grouped-traces/99.84.183.247/ 6-81.pcap
+../grouped-traces/13.249.42.122/ 3-464.pcap
+../grouped-traces/13.249.42.122/ 8-33.pcap
+../grouped-traces/13.249.42.122/ 6-621.pcap
+../grouped-traces/13.249.42.122/ 5-177.pcap
+../grouped-traces/13.249.42.122/ 5-224.pcap
+../grouped-traces/99.84.183.247/ 5-626.pcap
+../grouped-traces/13.249.42.122/ 5-76.pcap
+../grouped-traces/54.230.194.24/ 9-566.pcap
+../grouped-traces/54.230.194.24/ 9-215.pcap
+../grouped-traces/99.84.220.222/ 3-340.pcap
+../grouped-traces/99.84.183.247/ 8-629.pcap
+../grouped-traces/99.84.183.247/ 5-475.pcap
+../grouped-traces/99.84.183.247/ 7-635.pcap
+../grouped-traces/52.84.123.220/ 8-635.pcap
+../grouped-traces/99.84.220.222/ 3-246.pcap
+../grouped-traces/13.249.42.122/ 6-480.pcap
+../grouped-traces/99.84.183.247/ 4-611.pcap
+../grouped-traces/99.84.183.247/ 8-128.pcap
+../grouped-traces/13.249.42.122/ 9-83.pcap
+../grouped-traces/13.249.42.122/ 7-667.pcap
+../grouped-traces/13.249.42.122/ 3-106.pcap
+../grouped-traces/13.249.42.122/ 5-598.pcap
+../grouped-traces/52.84.123.220/ 3-697.pcap
+../grouped-traces/13.249.42.122/ 8-664.pcap
+../grouped-traces/13.249.42.122/ 4-433.pcap
+../grouped-traces/99.84.183.247/ 6-663.pcap
+../grouped-traces/13.249.42.122/ 3-467.pcap
+../grouped-traces/13.249.42.122/ 3-49.pcap
+../grouped-traces/13.249.42.122/ 5-374.pcap
+../grouped-traces/99.84.183.247/ 9-122.pcap
+../grouped-traces/13.249.42.122/ 8-697.pcap
+../grouped-traces/13.249.42.122/ 4-272.pcap
+../grouped-traces/13.249.42.122/ 9-219.pcap
+../grouped-traces/13.249.42.122/ 6-298.pcap
+../grouped-traces/13.249.42.122/ 6-102.pcap
+../grouped-traces/13.249.42.122/ 6-677.pcap
+../grouped-traces/99.84.183.247/ 5-108.pcap
+../grouped-traces/99.84.220.222/ 4-367.pcap
+../grouped-traces/54.230.194.158/ 5-391.pcap
+../grouped-traces/99.84.183.247/ 3-92.pcap
+../grouped-traces/99.84.183.247/ 8-74.pcap
+../grouped-traces/13.249.42.122/ 6-241.pcap
+../grouped-traces/99.84.183.247/ 3-223.pcap
+../grouped-traces/99.84.220.222/ 4-360.pcap
+../grouped-traces/13.249.42.122/ 4-298.pcap
+../grouped-traces/99.84.220.222/ 3-629.pcap
+../grouped-traces/52.84.123.220/ 5-315.pcap
+../grouped-traces/99.84.183.247/ 5-125.pcap
+../grouped-traces/99.84.183.247/ 4-577.pcap
+../grouped-traces/99.84.183.247/ 7-313.pcap
+../grouped-traces/99.84.183.247/ 4-325.pcap
+../grouped-traces/99.84.183.247/ 5-600.pcap
+../grouped-traces/54.230.194.158/ 4-607.pcap
+../grouped-traces/13.249.42.122/ 8-7.pcap
+../grouped-traces/99.84.183.247/ 9-244.pcap
+../grouped-traces/99.84.183.247/ 7-605.pcap
+../grouped-traces/13.249.42.122/ 3-551.pcap
+../grouped-traces/99.84.103.251/ 5-19.pcap
+../grouped-traces/13.249.42.122/ 5-455.pcap
+../grouped-traces/13.249.42.122/ 4-75.pcap
+../grouped-traces/13.249.42.122/ 4-346.pcap
+../grouped-traces/99.84.183.247/ 3-77.pcap
+../grouped-traces/13.249.42.122/ 9-44.pcap
+../grouped-traces/99.84.183.247/ 6-662.pcap
+../grouped-traces/13.249.42.122/ 4-645.pcap
+../grouped-traces/13.249.42.122/ 3-484.pcap
+../grouped-traces/99.84.220.222/ 4-151.pcap
+../grouped-traces/99.84.183.247/ 8-220.pcap
+../grouped-traces/99.84.220.222/ 5-649.pcap
+../grouped-traces/99.84.183.247/ 7-505.pcap
+../grouped-traces/13.249.42.122/ 4-54.pcap
+../grouped-traces/99.84.183.247/ 4-48.pcap
+../grouped-traces/13.249.42.122/ 5-416.pcap
+../grouped-traces/13.249.42.122/ 8-59.pcap
+../grouped-traces/13.249.42.122/ 7-545.pcap
+../grouped-traces/99.84.183.247/ 9-54.pcap
+../grouped-traces/13.249.42.122/ 5-290.pcap
+../grouped-traces/13.249.42.122/ 4-572.pcap
+../grouped-traces/99.84.183.247/ 3-237.pcap
+../grouped-traces/13.249.42.122/ 8-169.pcap
+../grouped-traces/13.249.42.122/ 6-78.pcap
+../grouped-traces/99.84.183.247/ 8-233.pcap
+../grouped-traces/99.84.220.222/ 3-305.pcap
+../grouped-traces/99.84.183.247/ 7-503.pcap
+../grouped-traces/13.249.42.122/ 9-691.pcap
+../grouped-traces/52.84.123.220/ 5-389.pcap
+../grouped-traces/99.84.183.247/ 8-345.pcap
+../grouped-traces/13.249.42.122/ 6-239.pcap
+../grouped-traces/13.249.42.122/ 9-249.pcap
+../grouped-traces/13.249.42.122/ 3-278.pcap
+../grouped-traces/99.84.183.247/ 4-95.pcap
+../grouped-traces/13.249.42.122/ 5-204.pcap
+../grouped-traces/99.84.220.222/ 4-340.pcap
+../grouped-traces/99.84.183.247/ 9-575.pcap
+../grouped-traces/13.249.42.122/ 3-425.pcap
+../grouped-traces/13.249.42.122/ 7-538.pcap
+../grouped-traces/99.84.183.247/ 4-215.pcap
+../grouped-traces/99.84.183.247/ 7-624.pcap
+../grouped-traces/13.249.42.122/ 6-429.pcap
+../grouped-traces/13.249.42.122/ 3-260.pcap
+../grouped-traces/99.84.183.247/ 9-198.pcap
+../grouped-traces/13.249.42.122/ 7-347.pcap
+../grouped-traces/54.230.194.24/ 9-33.pcap
+../grouped-traces/13.249.42.122/ 7-117.pcap
+../grouped-traces/99.84.103.251/ 8-648.pcap
+../grouped-traces/99.84.220.222/ 5-648.pcap
+../grouped-traces/13.249.42.122/ 4-430.pcap
+../grouped-traces/99.84.183.247/ 6-7.pcap
+../grouped-traces/99.84.183.247/ 5-364.pcap
+../grouped-traces/13.249.42.122/ 7-345.pcap
+../grouped-traces/13.249.42.122/ 4-311.pcap
+../grouped-traces/99.84.183.247/ 6-12.pcap
+../grouped-traces/99.84.183.247/ 8-349.pcap
+../grouped-traces/52.84.123.220/ 7-250.pcap
+../grouped-traces/99.84.183.247/ 5-503.pcap
+../grouped-traces/54.230.194.158/ 6-45.pcap
+../grouped-traces/99.84.183.247/ 4-675.pcap
+../grouped-traces/99.84.183.247/ 4-188.pcap
+../grouped-traces/13.249.42.122/ 6-97.pcap
+../grouped-traces/99.84.183.247/ 9-139.pcap
+../grouped-traces/52.84.123.220/ 9-622.pcap
+../grouped-traces/99.84.220.222/ 4-161.pcap
+../grouped-traces/13.249.42.122/ 6-151.pcap
+../grouped-traces/99.84.183.247/ 5-54.pcap
+../grouped-traces/13.249.42.122/ 5-255.pcap
+../grouped-traces/13.249.42.122/ 3-443.pcap
+../grouped-traces/13.249.42.122/ 5-570.pcap
+../grouped-traces/13.249.42.122/ 3-680.pcap
+../grouped-traces/99.84.183.247/ 8-599.pcap
+../grouped-traces/13.249.42.122/ 9-97.pcap
+../grouped-traces/99.84.103.251/ 9-393.pcap
+../grouped-traces/99.84.183.247/ 9-453.pcap
+../grouped-traces/52.84.123.220/ 8-356.pcap
+../grouped-traces/54.230.194.158/ 5-674.pcap
+../grouped-traces/13.249.42.122/ 5-377.pcap
+../grouped-traces/13.249.42.122/ 8-147.pcap
+../grouped-traces/13.249.42.122/ 9-268.pcap
+../grouped-traces/99.84.183.247/ 4-301.pcap
+../grouped-traces/99.84.183.247/ 7-149.pcap
+../grouped-traces/13.249.42.122/ 8-321.pcap
+../grouped-traces/99.84.183.247/ 5-18.pcap
+../grouped-traces/13.249.42.122/ 9-407.pcap
+../grouped-traces/13.249.42.122/ 9-534.pcap
+../grouped-traces/99.84.183.247/ 6-443.pcap
+../grouped-traces/99.84.183.247/ 9-610.pcap
+../grouped-traces/13.249.42.122/ 7-265.pcap
+../grouped-traces/13.249.42.122/ 9-438.pcap
+../grouped-traces/13.249.42.122/ 6-659.pcap
+../grouped-traces/13.249.42.122/ 3-50.pcap
+../grouped-traces/99.84.183.247/ 3-79.pcap
+../grouped-traces/99.84.220.222/ 3-396.pcap
+../grouped-traces/99.84.183.247/ 6-358.pcap
+../grouped-traces/99.84.183.247/ 8-37.pcap
+../grouped-traces/99.84.220.222/ 3-614.pcap
+../grouped-traces/99.84.183.247/ 8-151.pcap
+../grouped-traces/13.249.42.122/ 9-625.pcap
+../grouped-traces/13.249.42.122/ 6-633.pcap
+../grouped-traces/13.249.42.122/ 6-512.pcap
+../grouped-traces/99.84.183.247/ 7-263.pcap
+../grouped-traces/13.249.42.122/ 6-87.pcap/usr/local/lib/python3.6/site-packages/scapy/layers/tls/keyexchange.py:609: CryptographyDeprecationWarning: Support for unsafe construction of public numbers from encoded data will be removed in a future version. Please use EllipticCurvePublicKey.from_encoded_point
+  pubnum = import_point(curve, self.point)
+
+../grouped-traces/13.249.42.122/ 7-669.pcap
+../grouped-traces/99.84.183.247/ 6-130.pcap
+../grouped-traces/99.84.220.222/ 9-329.pcap
+../grouped-traces/99.84.183.247/ 3-504.pcap
+../grouped-traces/13.249.42.122/ 4-684.pcap
+../grouped-traces/99.84.183.247/ 5-362.pcap
+../grouped-traces/13.249.42.122/ 9-148.pcap
+../grouped-traces/13.249.42.122/ 3-21.pcap
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/shutil.py", line 550, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: '../traces/ 3-21.pcap' -> '../grouped-traces/13.249.42.122/ 3-21.pcap'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "group-traces.py", line 27, in <module>
+    shutil.move(trace_file_path, output_trace_file_path)
+  File "/usr/lib64/python3.6/shutil.py", line 564, in move
+    copy_function(src, real_dst)
+  File "/usr/lib64/python3.6/shutil.py", line 263, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/usr/lib64/python3.6/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '../traces/ 3-21.pcap'
