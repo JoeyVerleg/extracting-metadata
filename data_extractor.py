@@ -54,7 +54,7 @@ class DataExtractor:
                 return size
         elif protocol == TCP:
             layer = packet.getlayer(TCP)
-            return len(layer)
+            return len(layer.payload)
 
     def get_client_hello_servername(self, packet):
             if(packet.haslayer(TLS_Ext_ServerName)):
