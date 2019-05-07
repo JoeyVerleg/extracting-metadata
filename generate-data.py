@@ -24,7 +24,7 @@ chrome_options = ChromeOptions()
 # firefox_options.add_argument("--disable-extensions")      
 # driver = webdriver.Firefox(executable_path=r'/home/joey/Desktop/fingerprinting/tool/geckodriver', options=firefox_options)
 
-OUTPUT_DIR = ""
+OUTPUT_DIR = "/mnt/hgfs/vmware_folder_shared/top_100/belgium_chrome_caching_off/"
 LOAD_DELAY = 4
 SETUP_DELAY = 2
 urls = [

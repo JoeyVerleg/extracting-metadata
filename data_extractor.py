@@ -9,7 +9,7 @@ from collections import defaultdict
 class DataExtractor:
     CAPTURE_FILTER = ""
 
-    def __init__(self, trace_dir, output_dir, local_ip):
+    def __init__(self, trace_dir, output_dir, local_ip, type_packets):
         load_layer("tls")
         self.TRACE_DIR = trace_dir
         self.OUTPUT_DIR = output_dir
@@ -17,6 +17,7 @@ class DataExtractor:
         self.dns_dict = dict()
         self.client_hello_dict = dict()
         self.domain_ip_dict = dict()
+        self.TYPE = type_packets
           
     def get_dns_responses(self, path_tracefile):
         packets = sniff(lfilter = lambda x: x.haslayer(DNSRR), offline=path_tracefile)
@@ -191,7 +192,7 @@ class DataExtractor:
         for packet in group:
             self.print_packet(packet, relative_time)
 
-    def save_as_fingerprint(self, packets, file_path):
+    def save_as_fingerprint(self, packets, file_path, type_packet):
         """ Saves a packetlist as a fingerprint 
             timing <tab> direction size
             example: 0.32323<tab>-1440
@@ -199,8 +200,10 @@ class DataExtractor:
         relative_time = packets[0].time
         with open(file_path, 'a') as out:
             for packet in packets:
-                # data = self.get_tcp_packet_fingerprint_info(packet, relative_time)
-                data = self.get_tls_packet_fingerprint_info(packet, relative_time)
+                if type_packet == "tcp":
+                    data = self.get_tcp_packet_fingerprint_info(packet, relative_time)
+                if type_packet == "tls": 
+                    data = self.get_tls_packet_fingerprint_info(packet, relative_time)
                 out.write(data + '\n')
 
 
@@ -224,6 +227,10 @@ class DataExtractor:
             # if ip_imdb != "52.85.245.38":
             #     continue
             # self.CAPTURE_FILTER = "host 52.85.245.38"
-            # packets = self.get_tcp_packets(trace_file_path)
-            packets = self.get_tls_packets(trace_file_path)
-            self.save_as_fingerprint(packets, fingerprint_file_path)
+            if self.TYPE == "tls":
+                packets = self.get_tls_packets(trace_file_path)
+                self.save_as_fingerprint(packets, fingerprint_file_path, "tls")
+            if self.TYPE == "tcp":
+                packets = self.get_tcp_packets(trace_file_path)
+                self.save_as_fingerprint(packets, fingerprint_file_path, "tcp")
+
