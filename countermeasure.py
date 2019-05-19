@@ -6,7 +6,7 @@ from random import randint
 parser = argparse.ArgumentParser(description='Used for applying countermeasures to extracted fingerprints' ) 
 parser.add_argument('dir', type=str, help='path to directory of files') 
 parser.add_argument('outputdir', type=str, help='path to output directory of files') 
-parser.add_argument('countermeasure', type=str, help='the countermeasure to apply, session random padding = session, packet random padding = packet') 
+parser.add_argument('countermeasure', type=str, help='the countermeasure to apply, session random padding = session, packet random padding = packet, tor sizes (all 1) = tor') 
 
 args = parser.parse_args()
 
@@ -41,6 +41,17 @@ def packet_random_padding(lines):
         lines[i] = line.replace(str(old_size) + '\n', str(new_size) + '\n')
     return lines
 
+def tor_padding(lines):
+    ''' 
+    Change all packet sizes to 1
+    '''
+
+    for i, line in enumerate(lines):
+        old_size = abs(get_size(line))
+        new_size = 1
+        lines[i] = line.replace(str(old_size) + '\n', str(new_size) + '\n')
+    return lines
+
 def get_size(line):
     return int(line.split('\t')[-1])
 
@@ -49,6 +60,8 @@ def apply_countermeasure(lines):
         lines = session_random_padding(lines)
     elif COUNTERMEASURE == "packet":
         lines = packet_random_padding(lines)
+    elif COUNTERMEASURE == "tor":
+        lines = tor_padding(lines)
     return lines
 
 
